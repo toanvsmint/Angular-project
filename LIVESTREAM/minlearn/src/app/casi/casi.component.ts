@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-casi',
   templateUrl: './casi.component.html',
   styleUrls: ['./casi.component.css']
 })
-export class CasiComponent implements OnInit {
+export class CasiComponent  {
 
   constructor() { }
-
-  ngOnInit() {
-  }
 
 }
