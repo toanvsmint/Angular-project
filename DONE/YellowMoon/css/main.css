@@ -1,0 +1,25 @@
+#main-page .header {
+  background: #bbbaba;
+  text-align: center;
+  padding: 40px 0; }
+  #main-page .header .my-logo {
+    padding-top: 30px; }
+    #main-page .header .my-logo h3 {
+      color: #fff;
+      font-size: 14px; }
+    #main-page .header .my-logo h1 {
+      color: yellow;
+      font-size: 28px; }
+  #main-page .header .my-bt {
+    padding: 30px 0; }
+    #main-page .header .my-bt span {
+      border: 1px solid yellow;
+      padding: 9px 30px;
+      color: #fff; }
+    #main-page .header .my-bt p {
+      margin-top: 20px;
+      font-size: 45px;
+      color: #fff; }
+      #main-page .header .my-bt p:before {
+        font-family: FontAwesome;
+        content: "\f107"; }
