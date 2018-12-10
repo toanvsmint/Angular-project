@@ -33,4 +33,156 @@
             
         }
     }
+    .navigation{
+        @media (min-width:768px){
+            border-bottom: 1px solid yellow;
+            padding-bottom: 10px; 
+        }
+        .menu{
+            
+            @media (min-width:768px){
+                margin-top: 20px;
+                float: right;
+            }
+            ul li{
+                list-style-type: none;
+                float: left;
+                padding: 10px 10px;
+               
+                a{
+                    text-decoration: none;
+                    
+                    &:hover{
+                        border: 1px solid yellow;
+                        @media (min-width:768px){
+                            padding: 10px 10px;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+    .about-us{
+        .title{
+            text-align: center;
+            @media (min-width:768px){
+                margin: 60px 0;
+            }
+            span{
+                color: yellow;
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+        }
+        .info{
+            .detail{
+                .number{
+                    font-size: 20px;
+                    color: yellow;
+                    border-right: 1px solid yellow;
+                    @media (min-width:768px){
+                        padding-right: 5px;
+                        margin-right: 5px;
+                    }
+                    
+                }
+                h4{
+                    display: inline-block;
+                }
+            }
+            p{
+                margin-top: 25px;
+                text-align: center;
+            }
+        }
+    }
+    .texts{
+        background: yellow;
+        text-align: center;
+        padding: 40px 0;
+        span{
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 16px;
+        }
+    }
+    .portfolio1{
+        .title{
+            text-align: center;
+        }
+        .all-my-filter{
+            text-align: center;
+        }
+        .all-courses{
+            .my-course{
+                margin-top: 20px;
+                li{
+                    list-style: none;
+                    display: inline-block;
+                    padding-left: 10px;
+                    padding: 10px 10px;
+                    background: pink;
+                    border: 1px solid gray;
+                    border-radius: 5px;
+                    margin: 5px 0px;
+                }
+            }
+        }
+    }
+    .portfolio{
+        .work-filter{
+            ul li{
+                list-style: none;
+                display: inline-block;
+                background: yellow;
+                padding: 5px 20px;
+               
+                border-radius: 5px;
+                cursor: pointer;
+                &:hover{
+                    background: rgb(42, 223, 168);
+                }
+            }
+        }
+        .all-project{
+            .work-item{
+                float: left;
+                width: 25%;
+                position: relative;
+            }
+        }
+    }
+    .clients{
+        background: gray;
+        padding: 30px 0;
+        text-align: center;
+        .img-clients{
+            @media (min-width:768px){
+                margin: 40px 0px;
+            }
+            img{
+                @media (min-width:768px){
+                    margin-left: 100px;
+                }
+                @media (max-width:768px){
+                    margin-left: 20px;
+                }
+                
+            }
+        }
+    }
+    .contact{
+        .title{
+            text-align: center;
+        }
+        .form{
+            input[type="text"], textarea {
+                background: yellow;
+                border: 1px solid yellow;
+                padding: 5px 6px;
+                margin-bottom: 5px;
+            }
+        }
+    }
 }
