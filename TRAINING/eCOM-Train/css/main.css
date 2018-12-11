@@ -1,0 +1,53 @@
+body .head {
+  background: #271818;
+  padding: 11px 0; }
+  body .head .main-head {
+    width: 1200px;
+    margin: auto; }
+    body .head .main-head .title {
+      display: inline-block;
+      vertical-align: top; }
+      body .head .main-head .title span {
+        margin: 0 auto;
+        color: #fff; }
+    body .head .main-head .right-info {
+      display: inline-block;
+      float: right; }
+      body .head .main-head .right-info .country {
+        display: inline-block;
+        vertical-align: top;
+        background: #271818;
+        border: 1px solid #271818; }
+      body .head .main-head .right-info .my-form {
+        display: inline-block; }
+        body .head .main-head .right-info .my-form .ebook {
+          background: #f97a0b;
+          text-align: center;
+          padding: 11px 0;
+          position: relative;
+          top: -11px;
+          width: 196px; }
+          body .head .main-head .right-info .my-form .ebook span {
+            margin: 0 auto;
+            color: #fff; }
+        body .head .main-head .right-info .my-form .form {
+          background: #6d564c;
+          width: 282px;
+          padding: 12px 12px;
+          top: -10px;
+          display: none;
+          position: relative; }
+          body .head .main-head .right-info .my-form .form p {
+            margin-bottom: 3px;
+            margin-top: 3px;
+            color: #f97a0b; }
+          body .head .main-head .right-info .my-form .form input, body .head .main-head .right-info .my-form .form textarea {
+            width: 100%; }
+          body .head .main-head .right-info .my-form .form .sub {
+            text-align: center;
+            padding-top: 10px; }
+            body .head .main-head .right-info .my-form .form .sub button {
+              width: 50%;
+              background: #f97a0b;
+              border: 1px solid #f97a0b;
+              height: 40px; }
