@@ -1,2 +1,0 @@
-- Ko dùng boostrap
-- Code thu?n

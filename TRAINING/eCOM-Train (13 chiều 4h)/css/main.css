@@ -1,0 +1,139 @@
+body {
+  margin: 0; }
+  body .container {
+    max-width: 1200px;
+    margin: auto; }
+  body .show3 {
+    max-width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 5px; }
+  body .head {
+    background: #47413a;
+    padding: 11px 0; }
+    body .head .main-head .title {
+      display: inline-block;
+      vertical-align: top; }
+      body .head .main-head .title span {
+        margin: 0 auto;
+        color: #fff; }
+    body .head .main-head .right-info {
+      display: inline-block;
+      float: right; }
+      body .head .main-head .right-info .country {
+        display: inline-block;
+        vertical-align: top;
+        background: #47413a;
+        border: 1px solid #47413a;
+        color: #fff; }
+      body .head .main-head .right-info .my-form {
+        display: inline-block; }
+        body .head .main-head .right-info .my-form .ebook {
+          background: #dd9f05;
+          text-align: center;
+          padding: 11px 0;
+          position: relative;
+          top: -11px;
+          width: 196px; }
+          body .head .main-head .right-info .my-form .ebook span {
+            margin: 0 auto;
+            color: #fff; }
+      body .head .main-head .right-info .form {
+        background: #6d564c;
+        width: 282px;
+        padding: 12px 12px;
+        top: -10px;
+        display: none;
+        position: relative; }
+        body .head .main-head .right-info .form p {
+          margin-bottom: 3px;
+          margin-top: 3px;
+          color: #dd9f05; }
+        body .head .main-head .right-info .form input, body .head .main-head .right-info .form textarea {
+          width: 100%; }
+        body .head .main-head .right-info .form .sub {
+          text-align: center;
+          padding-top: 10px; }
+          body .head .main-head .right-info .form .sub button {
+            width: 50%;
+            background: #dd9f05;
+            border: 1px solid #dd9f05;
+            height: 40px; }
+  body .side-bar {
+    background: #212121;
+    position: relative;
+    overflow: hidden;
+    width: 100%; }
+    body .side-bar .all-sidebar {
+      width: 1200px;
+      margin: auto; }
+      body .side-bar .all-sidebar .logo {
+        display: inline-block;
+        width: 18%;
+        float: left; }
+      body .side-bar .all-sidebar .menu {
+        float: right;
+        color: #fff;
+        width: 80%; }
+        body .side-bar .all-sidebar .menu li {
+          list-style: none;
+          float: left;
+          padding-right: 30px;
+          display: inline-block; }
+          body .side-bar .all-sidebar .menu li:hover {
+            color: #dd9f05;
+            cursor: pointer;
+            text-decoration: underline;
+            padding-bottom: 5px; }
+        body .side-bar .all-sidebar .menu .list {
+          position: relative; }
+          body .side-bar .all-sidebar .menu .list:hover .our-bar {
+            display: block; }
+          body .side-bar .all-sidebar .menu .list .our-bar {
+            display: none;
+            position: absolute; }
+            body .side-bar .all-sidebar .menu .list .our-bar li {
+              margin-right: 10px;
+              background: #dd9f05;
+              padding-right: 10px;
+              color: #fff; }
+            body .side-bar .all-sidebar .menu .list .our-bar .service {
+              padding-right: 10px; }
+  body .slide .flexslider {
+    width: 100%;
+    margin: auto; }
+    body .slide .flexslider li.sl1 {
+      background: url(../img/slide1.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 700px;
+      color: #fff; }
+    body .slide .flexslider li.sl2 {
+      background: url(../img/slide2.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 700px;
+      color: #fff; }
+    body .slide .flexslider li .content {
+      display: inline-block;
+      margin-top: 100px;
+      margin-left: 100px; }
+      body .slide .flexslider li .content span {
+        color: #fff; }
+      body .slide .flexslider li .content .scren h3 {
+        margin: 0;
+        color: #fff;
+        font-size: 120px; }
+        body .slide .flexslider li .content .scren h3 strong {
+          color: #dd9f05; }
+      body .slide .flexslider li .content .scren span {
+        color: #fff;
+        text-decoration: underline; }
+      body .slide .flexslider li .content button {
+        background: #dd9f05;
+        border: 1px solid #dd9f05;
+        margin-top: 5px; }
+        body .slide .flexslider li .content button:hover {
+          cursor: pointer; }
