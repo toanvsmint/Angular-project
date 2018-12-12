@@ -10,9 +10,15 @@ body{
         vertical-align: top;
         margin: 0 5px;
     }
+    .current{
+        display: block !important;
+    }
     .head{
         background: #47413a;
         padding: 11px 0;
+        position: relative;
+        overflow: hidden;
+        height: 19px;
         .main-head{
            
             .title{
@@ -26,6 +32,7 @@ body{
             .right-info{
                 display: inline-block;
                 float: right;
+                position: relative;
                 .country{
                     display: inline-block;
                     vertical-align: top;
@@ -36,7 +43,7 @@ body{
                 }
                 .my-form{
                     display: inline-block;
-                    
+                    cursor: pointer;
                     .ebook{
                         background: #dd9f05;
                         text-align: center;
@@ -55,11 +62,11 @@ body{
                 }
                 .form{
                     background: #6d564c;
-                    width: 282px;
+                    width: 264px;
                     padding: 12px 12px;
-                    top: -10px;
                     display: none;
-                    position: relative;
+                    position: absolute;
+                    z-index: 999;
                     p{
                         margin-bottom: 3px;
                         margin-top: 3px;
@@ -99,6 +106,7 @@ body{
                 float: right;
                 color: #fff;
                 width: 80%;
+                
                 li{
                     list-style: none;
                     float: left;
@@ -114,7 +122,11 @@ body{
                 .list{
                     position: relative;
                     &:hover{
-                        .our-bar{ display: block; }
+                        .our-bar{
+                             display: block;
+                             width: 30em; 
+                             z-index: 9;
+                        }
                     }
                     .our-bar{
                         display: none;
@@ -123,7 +135,7 @@ body{
                             margin-right: 10px;
                             background: #dd9f05;
                             padding-right: 10px;
-                            color: #fff;
+                            color: #000;
                         }
                         .service{
                             padding-right: 10px;
@@ -138,6 +150,10 @@ body{
         .flexslider{
             width: 100%;
             margin: auto;
+            position: relative;
+            .flex-control-nav{
+                bottom: 10px;
+            }
             li{
                 &.sl1{
                     background: url(../img/slide1.png);
@@ -185,6 +201,49 @@ body{
                         }
                     }
                 }
+            }
+        }
+    }
+    .footer{
+        background: #212121;
+        color: #e8a904;
+        .info2{
+            .icon{
+                p{
+                    float: left;
+                }
+            }
+        }
+        .info3{
+            float: right;
+            .mail{
+                input{
+                    background: #1b1b1b;
+                    border: 1px solid #1b1b1b;
+                    padding: 10px 8px;
+                    &::placeholder{
+                        color: #dd9f05
+                    }
+                }
+                button{
+                    color: #dd9f05;
+                    background: #1b1b1b;
+                    border: 1px solid #1b1b1b;
+                    padding: 10px 10px;
+                    margin-left: 5px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .bottom{
+        background: #47413a;
+        padding: 16px 0;
+        text-align: center;
+        span{
+            color: #fff;
+            strong{
+                color: #c8940f;
             }
         }
     }

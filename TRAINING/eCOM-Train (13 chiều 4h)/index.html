@@ -129,7 +129,21 @@
                     <p>Wifi</p>
                 </div>
             </div>
+            <div class="info3 show3">
+                <div class="detail">
+                    <h3><strong>Sign up</strong> for our</h3>
+                    <h3>NEWSLETTER</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore?</p>
+                </div>
+                <div class="mail">
+                    <input type="email" placeholder="Enter your email here">
+                    <button class="submit">GO</button>
+                </div>
+            </div>
         </div>
+    </section>
+    <section class="bottom">
+        <span>Copyright 2015 <strong>OneCreative</strong>. All rights reservered.</span>
     </section>
 
     <script defer src="js/jquery.flexslider.js"></script>
@@ -138,8 +152,14 @@
                 $('.flexslider').flexslider({
                     animation: "slide",
                 });
+                
+                $('.my-form').click(function(){
+                    $('.form').toggleClass("current");
+                });   
             });
+ 
     </script>
+    
 
 </body>
     
