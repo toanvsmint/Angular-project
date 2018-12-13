@@ -7,9 +7,12 @@ body {
     max-width: 30%;
     display: inline-block;
     vertical-align: top;
-    margin: 0 5px; }
+    margin: 0 5px;
+    width: 100%; }
   body .current {
     display: block !important; }
+  body a {
+    text-decoration: none; }
   body .head {
     background: #47413a;
     padding: 11px 0;
@@ -48,7 +51,7 @@ body {
       body .head .main-head .right-info .form {
         background: #6d564c;
         width: 264px;
-        padding: 12px 12px;
+        padding: 11px 11px;
         display: none;
         position: absolute;
         z-index: 999; }
@@ -80,30 +83,33 @@ body {
         float: left; }
       body .side-bar .all-sidebar .menu {
         float: right;
-        color: #fff;
         width: 80%; }
         body .side-bar .all-sidebar .menu li {
           list-style: none;
           float: left;
-          padding-right: 30px;
-          display: inline-block; }
-          body .side-bar .all-sidebar .menu li:hover {
-            color: #dd9f05;
-            cursor: pointer;
-            text-decoration: underline;
-            padding-bottom: 5px; }
+          display: inline-block;
+          margin-right: 20px; }
+          body .side-bar .all-sidebar .menu li a {
+            text-decoration: none;
+            color: #fff; }
+            body .side-bar .all-sidebar .menu li a:hover {
+              color: #dd9f05;
+              cursor: pointer;
+              border-bottom: 1px solid #dd9f05;
+              padding-bottom: 3px; }
         body .side-bar .all-sidebar .menu .list {
           position: relative; }
           body .side-bar .all-sidebar .menu .list:hover .our-bar {
             display: block;
-            width: 30em;
-            z-index: 9; }
+            width: 60em;
+            background: #dd9f05; }
+            body .side-bar .all-sidebar .menu .list:hover .our-bar a {
+              color: #000; }
           body .side-bar .all-sidebar .menu .list .our-bar {
             display: none;
             position: absolute; }
             body .side-bar .all-sidebar .menu .list .our-bar li {
               margin-right: 10px;
-              background: #dd9f05;
               padding-right: 10px;
               color: #000; }
             body .side-bar .all-sidebar .menu .list .our-bar .service {
@@ -132,6 +138,8 @@ body {
       display: inline-block;
       margin-top: 100px;
       margin-left: 100px; }
+      body .slide .flexslider li .content H3 {
+        margin: 0; }
       body .slide .flexslider li .content span {
         color: #fff; }
       body .slide .flexslider li .content .scren h3 {
@@ -152,14 +160,40 @@ body {
   body .footer {
     background: #212121;
     color: #e8a904; }
-    body .footer .info2 .icon p {
-      float: left; }
+    body .footer .info1 .detail h3 {
+      border-bottom: 1px solid #e8a904;
+      padding-bottom: 10px; }
+    body .footer .info1 .detail2 p {
+      margin: 0; }
+    body .footer .info1 .detail3 h4 {
+      border-top: 1px solid #e8a904;
+      padding-top: 10px;
+      margin-top: 10px; }
+    body .footer .info2 {
+      margin-left: 25px; }
+      body .footer .info2 .detail h3 {
+        border-bottom: 1px solid #e8a904;
+        padding-bottom: 10px; }
+      body .footer .info2 .icon {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+        justify-content: space-around; }
+        body .footer .info2 .icon span {
+          color: #6d564c;
+          font-size: 40px; }
+          body .footer .info2 .icon span:hover {
+            color: #c8940f;
+            cursor: pointer; }
     body .footer .info3 {
       float: right; }
       body .footer .info3 .mail input {
         background: #1b1b1b;
         border: 1px solid #1b1b1b;
-        padding: 10px 8px; }
+        padding: 10px 8px;
+        color: #e8a904;
+        width: 75%; }
         body .footer .info3 .mail input::-webkit-input-placeholder {
           color: #dd9f05; }
         body .footer .info3 .mail input:-ms-input-placeholder {
@@ -175,6 +209,9 @@ body {
         padding: 10px 10px;
         margin-left: 5px;
         cursor: pointer; }
+      body .footer .info3 .detail p {
+        border-top: 1px dotted;
+        padding-top: 15px; }
   body .bottom {
     background: #47413a;
     padding: 16px 0;

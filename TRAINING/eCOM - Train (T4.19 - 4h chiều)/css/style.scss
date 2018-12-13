@@ -1,0 +1,121 @@
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    margin-right: 10px;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.col{
+    max-width: 32%;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    margin: 0 5px;
+}
+ul{
+    li{
+        display: inline-block;
+        margin-right: 30px;
+    }
+}
+body{
+    margin: 0;
+}
+
+header{
+    .all-menu{
+        background: #f2f2f2;
+        .top-menu{
+            P{
+                display: inline-block;
+            }
+            .menu{
+                display: inline-block;
+                float: right;
+                
+            }
+        }
+    }
+    .main-menu{
+        padding-top: 15px;
+        .menu{
+            span{
+                margin-right: 10px;
+                font-size: 20px;
+                font-style: italic;
+            }
+            
+        }
+        .logo{
+            text-align: center;
+        }
+        .social-icon{
+            .icon{
+                display: inline-block;
+                margin-left: 50px;
+                .fa-facebook{
+                    border: 2px solid gray;
+                    border-radius: 50%;
+                    padding: 5px 10px;
+                }
+                .fa-twitter{
+                    border: 2px solid gray;
+                    border-radius: 50%;
+                    padding: 5px 7px;
+                }
+                .fa-pinterest{
+                    border: 2px solid gray;
+                    border-radius: 50%;
+                    padding: 5px 8px;
+                }
+                .fa-instagram{
+                    border: 2px solid gray;
+                    border-radius: 50%;
+                    padding: 5px 8px;
+                }
+            }
+            #chon{
+                background: #000;
+                color: #fff;
+                padding: 7px 10px;
+                float: right;
+            }
+        }
+    }
+    
+}
+.slider{
+    .flexslider{
+        
+        li{
+            &.slide1{
+            background: url(../img/slide1.png);
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 900px;
+            }
+            &.slide2{
+                background: url(../img/slide1.png);
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 900px;
+            }
+            &.slide3{
+                background: url(../img/slide1.png);
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 900px;
+            }
+            
+        }
+        
+    }
+}
+    

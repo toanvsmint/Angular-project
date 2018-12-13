@@ -1,0 +1,86 @@
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  margin-right: 10px; }
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto; }
+
+.col {
+  max-width: 32%;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  margin: 0 5px; }
+
+ul li {
+  display: inline-block;
+  margin-right: 30px; }
+
+body {
+  margin: 0; }
+
+header .all-menu {
+  background: #f2f2f2; }
+  header .all-menu .top-menu P {
+    display: inline-block; }
+  header .all-menu .top-menu .menu {
+    display: inline-block;
+    float: right; }
+
+header .main-menu {
+  padding-top: 15px; }
+  header .main-menu .menu span {
+    margin-right: 10px;
+    font-size: 20px;
+    font-style: italic; }
+  header .main-menu .logo {
+    text-align: center; }
+  header .main-menu .social-icon .icon {
+    display: inline-block;
+    margin-left: 50px; }
+    header .main-menu .social-icon .icon .fa-facebook {
+      border: 2px solid gray;
+      border-radius: 50%;
+      padding: 5px 10px; }
+    header .main-menu .social-icon .icon .fa-twitter {
+      border: 2px solid gray;
+      border-radius: 50%;
+      padding: 5px 7px; }
+    header .main-menu .social-icon .icon .fa-pinterest {
+      border: 2px solid gray;
+      border-radius: 50%;
+      padding: 5px 8px; }
+    header .main-menu .social-icon .icon .fa-instagram {
+      border: 2px solid gray;
+      border-radius: 50%;
+      padding: 5px 8px; }
+  header .main-menu .social-icon #chon {
+    background: #000;
+    color: #fff;
+    padding: 7px 10px;
+    float: right; }
+
+.slider .flexslider li.slide1 {
+  background: url(../img/slide1.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px; }
+
+.slider .flexslider li.slide2 {
+  background: url(../img/slide1.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px; }
+
+.slider .flexslider li.slide3 {
+  background: url(../img/slide1.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px; }

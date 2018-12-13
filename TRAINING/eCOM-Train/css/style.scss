@@ -9,9 +9,13 @@ body{
         display: inline-block;
         vertical-align: top;
         margin: 0 5px;
+        width: 100%;
     }
     .current{
         display: block !important;
+    }
+    a{
+        text-decoration: none;
     }
     .head{
         background: #47413a;
@@ -40,6 +44,7 @@ body{
                     border: 1px solid #47413a;
                     color: #fff;
                     
+                    
                 }
                 .my-form{
                     display: inline-block;
@@ -63,7 +68,7 @@ body{
                 .form{
                     background: #6d564c;
                     width: 264px;
-                    padding: 12px 12px;
+                    padding: 11px 11px;
                     display: none;
                     position: absolute;
                     z-index: 999;
@@ -104,28 +109,36 @@ body{
             }
             .menu{
                 float: right;
-                color: #fff;
+                
                 width: 80%;
                 
                 li{
                     list-style: none;
                     float: left;
-                    padding-right: 30px;
                     display: inline-block;
-                    &:hover{
-                        color: #dd9f05;
-                        cursor: pointer;
-                        text-decoration: underline;
-                        padding-bottom: 5px;
+                    margin-right: 20px;
+                    
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                        &:hover{
+                            color: #dd9f05;
+                            cursor: pointer;
+                            border-bottom: 1px solid #dd9f05;
+                            padding-bottom: 3px;
+                        }
                     }
                 }
                 .list{
                     position: relative;
                     &:hover{
                         .our-bar{
-                             display: block;
-                             width: 30em; 
-                             z-index: 9;
+                            display: block;
+                            width: 60em;
+                            background: #dd9f05;
+                            a{
+                                color: #000;
+                            }
                         }
                     }
                     .our-bar{
@@ -133,9 +146,10 @@ body{
                         position: absolute;                
                         li{
                             margin-right: 10px;
-                            background: #dd9f05;
+                            
                             padding-right: 10px;
                             color: #000;
+                           
                         }
                         .service{
                             padding-right: 10px;
@@ -172,6 +186,9 @@ body{
                     color: #fff;
                 }
                 .content{
+                    H3{
+                        margin: 0;
+                    }
                     display: inline-block;
                     margin-top: 100px;
                     margin-left: 100px;
@@ -207,20 +224,52 @@ body{
     .footer{
         background: #212121;
         color: #e8a904;
+        .info1{
+            .detail h3{
+                border-bottom: 1px solid #e8a904;
+                padding-bottom: 10px;
+            }
+            .detail2 p{
+                margin: 0;
+            }
+            .detail3{
+                h4{
+                    border-top: 1px solid #e8a904;
+                    padding-top: 10px;
+                    margin-top: 10px;
+                }
+            }
+        }
         .info2{
+            margin-left: 25px;
+            .detail h3{
+                border-bottom: 1px solid #e8a904;
+                padding-bottom: 10px;
+            }
             .icon{
-                p{
-                    float: left;
+                display: flex;
+                justify-content: space-around;
+                span{
+                    color: #6d564c;
+                    
+                    font-size: 40px;
+                    &:hover{
+                        color: #c8940f;
+                        cursor: pointer;
+                    }
                 }
             }
         }
         .info3{
             float: right;
             .mail{
+                
                 input{
                     background: #1b1b1b;
                     border: 1px solid #1b1b1b;
                     padding: 10px 8px;
+                    color: #e8a904;
+                    width: 75%;
                     &::placeholder{
                         color: #dd9f05
                     }
@@ -233,6 +282,10 @@ body{
                     margin-left: 5px;
                     cursor: pointer;
                 }
+            }
+            .detail p{
+                border-top: 1px dotted;
+                padding-top: 15px;
             }
         }
     }
