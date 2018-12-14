@@ -88,34 +88,265 @@ header{
     }
     
 }
-.slider{
+.my-slider{
     .flexslider{
-        
-        li{
-            &.slide1{
-            background: url(../img/slide1.png);
-            background-position: top;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 900px;
-            }
-            &.slide2{
-                background: url(../img/slide1.png);
-                background-position: top;
-                background-repeat: no-repeat;
-                background-size: cover;
-                height: 900px;
-            }
-            &.slide3{
-                background: url(../img/slide1.png);
-                background-position: top;
-                background-repeat: no-repeat;
-                background-size: cover;
-                height: 900px;
-            }
+        .slides{
             
+            li{
+                &.slide1{
+                background: url(../img/slide1.png);
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 900px;
+                
+                }
+                &.slide2{
+                    background: url(../img/slide1.png);
+                    background-position: top;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 900px;
+                    
+                }
+                &.slide3{
+                    background: url(../img/slide1.png);
+                    background-position: top;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 900px;
+                }
+                .sell{
+                    text-align: center;
+                    position: relative;
+                    top: 40%;
+                    .sell-child{
+                        display: inline-block;
+                        padding: 5px;
+                        border: 2px solid #fff;
+                        .all-sell{
+                            border: 1px solid #fff;
+                            padding: 0 30px;
+                            padding-bottom: 10px;
+                            p{
+                                color: #fff;
+                                &::before, &::after{
+                                    font-family: FontAwesome;
+                                    content: "\f068";
+                                    font-size: 10px;
+                                    color: #fff;
+                                    padding: 0 5px;
+                                }
+                            }
+                            h3{color: #fff;}
+                            span{
+                                font-size: 20px;
+                                font-weight: 900;
+                            }
+                        }
+                        &:hover{
+                           .all-sell {
+                            border: 1px solid transparent;
+                            transition-duration: 500ms;
+                            transition-delay: 100ms;
+                            transition-property: 0;
+                           }
+                
+                        }
+                    }
+                    .btn{
+                        margin-top: 25px;
+                        a{
+                            margin: 0;
+                            border: 1px solid #f09d66;
+                            background: #f09d66;
+                            padding: 10px 15px;
+                            span{
+                                color: #fff;
+                                font-weight: 500;
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }  
+            }
         }
         
+        
+    }
+}
+
+.handpick{
+    .block-left{
+        text-align: right;
+    }
+}
+
+.our-support{
+    .support{
+        margin-top: 66px;
+        .left{
+            .btn-left{
+                background: none;
+                border: 0;
+                font-size: 20px;
+                line-height: 0;
+                position: relative;
+                width: 16em;
+                height: 4em;
+                right: 3px;
+            }
+            .btn-left h3, .btn-left p{
+                color: #fff;
+                position: relative;
+                z-index: 9;
+            }
+            .btn-left::before, .btn-left::after{
+                  background: #d9bf8f;
+                border-radius: 0px;
+                content: '';
+                display: block;
+                position: absolute;
+                left: 0;
+                right: 0;
+                 transition: all 1s;
+                height: 2em;
+            }
+            .btn-left::before{
+                transform: skew(45deg);
+               top:0;
+            }
+            .btn-left::after{
+              transform: skew(-45deg);
+             top:2em;
+            }
+           
+            
+        }
+        .btb{
+            background: none;
+            border: 0;
+            font-size: 20px;
+            line-height: 0;
+            position: relative;
+            width: 5em;
+            height: 4em;
+            left:30px;
+        }
+        .btb::before, .btb::after{
+            background: #d9bf8f;
+            border-radius: 0px;
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            transition: all 1s;
+            height: 2em;
+        }
+        .btb::before{
+            transform: skew(0deg);
+           top:0;
+        }
+        .btb::after{
+          transform: skew(0deg);
+         top:2em;
+        }
+        .center{
+            .btn-center{
+                background: none;
+                border: 0;
+                font-size: 20px;
+                line-height: 0;
+                position: relative;
+                width: 24em;
+                height: 4em;
+            }
+            .btn-center h3, .btn-center p{
+                color: #fff;
+                position: relative;
+                z-index: 9;
+            }
+            .btn-center::before, .btn-center::after{
+                  background: #000;
+                border-radius: 0px;
+                content: '';
+                display: block;
+                position: absolute;
+                left: 0;
+                right: 0;
+                 transition: all 1s;
+                height: 4em;
+            }
+            .btn-center::before{
+                transform: skew(45deg);
+               top:0;
+            }
+            .btn-center::after{
+              transform: skew(-45deg);
+             top:0;
+            }
+        }
+        .right{
+            .btn-right{
+                background: none;
+                border: 0;
+                font-size: 20px;
+                line-height: 0;
+                position: relative;
+                width: 15em;
+                height: 4em;
+                right: -3em;            
+            }
+            .btn-right h3, .btn-right p{
+                color: #fff;
+                position: relative;
+                z-index: 9;
+            }
+            .btb span{
+                color: #fff;
+                position: relative;
+                z-index: 9;
+            }
+            .btn-right span{
+                color: #fff;
+                position: relative;
+                z-index: 9;
+            }
+            .btn-right::before, .btn-right::after{
+                  background: #d9bf8f;
+                border-radius: 0px;
+                content: '';
+                display: block;
+                position: absolute;
+                left: 0;
+                right: 0;
+                 transition: all 1s;
+                height: 2em;
+            }
+            .btn-right::before{
+                transform: skew(-45deg);
+               top:0;
+            }
+            .btn-right::after{
+              transform: skew(45deg);
+             top:2em;
+            }
+        }
+    }
+    .row{
+        text-align: center;
+        h3{
+            border-bottom: 1px solid;
+            span{
+                font-size: 26px;
+                font-style: italic;
+                background: #fff;
+                padding: 10px 100px;
+                position: relative;
+                top: 10px
+            }
+        }
     }
 }
     
