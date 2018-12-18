@@ -210,8 +210,9 @@ html[xmlns] .flexslider .slides {
   *display: inline;
 }
 .flex-control-paging li a {
-  width: 11px;
-  height: 11px;
+  width: 20px;
+  height: 20px;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   display: block;
   background: #666;
   background:#b2b2b2;
