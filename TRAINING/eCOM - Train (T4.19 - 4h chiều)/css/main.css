@@ -222,8 +222,6 @@ header .main-menu {
     top: 60%; }
   .handpick .block-center .square {
     border: 2px solid #fff;
-    width: 460px;
-    height: 825px;
     top: 0;
     position: absolute;
     margin: 20px 20px;
@@ -233,6 +231,18 @@ header .main-menu {
     -webkit-transition-delay: 100ms;
     -o-transition-delay: 100ms;
     transition-delay: 100ms; }
+    @media (min-width: 1367px) {
+      .handpick .block-center .square {
+        width: 460px;
+        height: 825px; } }
+    @media (min-width: 1281px) and (max-width: 1366px) {
+      .handpick .block-center .square {
+        width: 440px;
+        height: 798px; } }
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      .handpick .block-center .square {
+        width: 418px;
+        height: 750px; } }
   .handpick .block-center:hover .square {
     border: 2px solid transparent;
     background: #2b2b2b47; }
@@ -257,8 +267,6 @@ header .main-menu {
   position: absolute;
   top: 0;
   border: 2px solid #fff;
-  width: 375px;
-  height: 375px;
   margin: 20px;
   text-align: center;
   -webkit-transition: all 500ms;
@@ -267,6 +275,18 @@ header .main-menu {
   -webkit-transition-delay: 100ms;
   -o-transition-delay: 100ms;
   transition-delay: 100ms; }
+  @media (min-width: 1367px) {
+    .handpick .btn {
+      width: 375px;
+      height: 375px; } }
+  @media (min-width: 1281px) and (max-width: 1366px) {
+    .handpick .btn {
+      width: 362px;
+      height: 360px; } }
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    .handpick .btn {
+      width: 340px;
+      height: 340px; } }
   .handpick .btn:hover {
     border: 2px solid transparent;
     background: #2b2b2b47; }
@@ -290,22 +310,27 @@ header .main-menu {
     margin-bottom: 0;
     font-size: 30px;
     margin-top: 20px; }
-  .our-support .support .left .my-box {
-    width: 34em;
-    height: 100px;
-    background: transparent;
-    position: relative; }
-    .our-support .support .left .my-box .my-add {
-      -webkit-clip-path: polygon(0% 0%, 75% 0%, 82% 50%, 75% 100%, 0% 100%);
-      clip-path: polygon(0% 0%, 75% 0%, 82% 50%, 75% 100%, 0% 100%);
-      color: #fff;
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      right: 0px;
-      bottom: 0px;
-      background-color: #d9bf8f;
-      padding-left: 4em; }
+  .our-support .support .left {
+    margin-left: 0; }
+    .our-support .support .left .my-box {
+      width: 34em;
+      height: 100px;
+      background: transparent;
+      position: relative; }
+      .our-support .support .left .my-box .my-add {
+        -webkit-clip-path: polygon(0% 0%, 75% 0%, 82% 50%, 75% 100%, 0% 100%);
+        clip-path: polygon(0% 0%, 75% 0%, 82% 50%, 75% 100%, 0% 100%);
+        color: #fff;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-color: #d9bf8f;
+        padding-left: 4em; }
+        .our-support .support .left .my-box .my-add .move {
+          position: relative;
+          left: -30px; }
   .our-support .support .center .c-box {
     width: 32em;
     height: 100px;
@@ -343,7 +368,7 @@ header .main-menu {
       padding-left: 15em; }
       .our-support .support .right .box .add .move {
         position: relative;
-        left: -50px; }
+        left: -80px; }
 
 .col-4 {
   max-width: 30%;
@@ -518,8 +543,6 @@ header .main-menu {
       clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 1% 100%); }
 
 .recent .col-3 .square {
-  width: 331px;
-  height: 384px;
   margin: auto;
   background: none;
   position: absolute;
@@ -528,6 +551,18 @@ header .main-menu {
   -webkit-transition: all 500ms;
   -o-transition: all 500ms;
   transition: all 500ms; }
+  @media (min-width: 1367px) {
+    .recent .col-3 .square {
+      width: 331px;
+      height: 384px; } }
+  @media (min-width: 1281px) and (max-width: 1366px) {
+    .recent .col-3 .square {
+      width: 320px;
+      height: 370px; } }
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    .recent .col-3 .square {
+      width: 301px;
+      height: 350px; } }
 
 .brand {
   margin-bottom: 6em; }
@@ -581,7 +616,7 @@ footer {
   footer .all-footer {
     padding-top: 3em; }
     footer .all-footer p {
-      color: gray; }
+      color: #747474; }
   footer a {
     color: #fff; }
     footer a p {
@@ -615,18 +650,17 @@ footer {
     position: relative; }
     footer .col-fot-mail form input[type="email"] {
       height: 40px;
-      width: 84%;
+      width: 95%;
       background: transparent;
-      border: 1px solid gray;
-      padding-left: 15px;
-      border-radius: 5px; }
+      border: 1px solid #747474;
+      padding-left: 15px; }
     footer .col-fot-mail form input[type='button'] {
       cursor: pointer;
       padding: 10px 30px;
-      background: gray;
-      border: 1px solid gray;
+      background: #323031;
+      border: 1px solid #323031;
       position: absolute;
-      left: 24em;
+      right: 3%;
       top: 3px;
       color: #fff;
       text-transform: uppercase; }
@@ -654,7 +688,7 @@ footer {
       font-size: 20px;
       padding: 2px; }
   footer .footer-second {
-    color: gray;
+    color: #747474;
     padding-bottom: 2em; }
     footer .footer-second .content {
       display: inline-block; }
