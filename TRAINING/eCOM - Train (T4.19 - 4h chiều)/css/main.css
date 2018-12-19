@@ -27,8 +27,13 @@ a {
   color: #000; }
 
 .container {
-  max-width: 1400px;
   margin: 0 auto; }
+  @media (min-width: 1367px) {
+    .container {
+      max-width: 1400px; } }
+  @media (min-width: 1281px) and (max-width: 1366px) {
+    .container {
+      max-width: 1200px; } }
 
 .col {
   max-width: 32%;
@@ -86,6 +91,9 @@ header .main-menu {
     header .main-menu .social-icon .icon {
       display: inline-block;
       margin-left: 80px; }
+      @media (min-width: 1281px) and (max-width: 1366px) {
+        header .main-menu .social-icon .icon {
+          margin-left: 40px; } }
       header .main-menu .social-icon .icon a {
         color: #f7c497;
         margin-right: 20px; }
@@ -98,6 +106,10 @@ header .main-menu {
         vertical-align: middle;
         text-align: center;
         line-height: 32px; }
+    header .main-menu .social-icon .my-select {
+      display: inline-block;
+      vertical-align: bottom;
+      float: right; }
     header .main-menu .social-icon #chon {
       background: #000;
       color: #fff;
@@ -317,6 +329,9 @@ header .main-menu {
       height: 100px;
       background: transparent;
       position: relative; }
+      @media (min-width: 1281px) and (max-width: 1366px) {
+        .our-support .support .left .my-box {
+          width: 30em; } }
       .our-support .support .left .my-box .my-add {
         -webkit-clip-path: polygon(0% 0%, 75% 0%, 82% 50%, 75% 100%, 0% 100%);
         clip-path: polygon(0% 0%, 75% 0%, 82% 50%, 75% 100%, 0% 100%);
@@ -336,6 +351,11 @@ header .main-menu {
     height: 100px;
     background: transparent;
     position: relative; }
+    @media (min-width: 1281px) and (max-width: 1366px) {
+      .our-support .support .center .c-box {
+        width: 28em; }
+        .our-support .support .center .c-box .c-add {
+          left: -20px; } }
     .our-support .support .center .c-box .c-add {
       padding-left: 13em;
       color: #fff;
@@ -350,11 +370,18 @@ header .main-menu {
       .our-support .support .center .c-box .c-add .move {
         position: relative;
         left: -100px; }
+        @media (min-width: 1281px) and (max-width: 1366px) {
+          .our-support .support .center .c-box .c-add .move {
+            left: -125px;
+            width: 325px; } }
   .our-support .support .right .box {
     width: 30em;
     height: 100px;
     background: transparent;
     position: relative; }
+    @media (min-width: 1281px) and (max-width: 1366px) {
+      .our-support .support .right .box {
+        width: 25em; } }
     .our-support .support .right .box .add {
       -webkit-clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 18% 50%, 25% 0%);
       clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 18% 50%, 25% 0%);
@@ -366,9 +393,16 @@ header .main-menu {
       bottom: 0px;
       background-color: #d9bf8f;
       padding-left: 15em; }
+      @media (min-width: 1281px) and (max-width: 1366px) {
+        .our-support .support .right .box .add {
+          left: -54px; } }
       .our-support .support .right .box .add .move {
         position: relative;
         left: -80px; }
+        @media (min-width: 1281px) and (max-width: 1366px) {
+          .our-support .support .right .box .add .move {
+            left: -96px;
+            width: 280px; } }
 
 .col-4 {
   max-width: 30%;
@@ -391,7 +425,8 @@ header .main-menu {
   width: 100%;
   padding: 0 3px;
   text-align: center;
-  position: relative; }
+  position: relative;
+  margin: 0 2px; }
 
 .col-2 {
   max-width: 16%;
@@ -445,27 +480,19 @@ header .main-menu {
       margin: auto;
       font-family: 'Times New Roman'; }
       .row-pan h3 .icon-title:before {
-        content: "i_l";
-        color: transparent;
-        position: absolute;
-        background: url(../img/icon.png);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: contain;
-        left: 60px;
-        top: 31%;
-        font-size: 18px; }
+        left: 60px; }
       .row-pan h3 .icon-title:after {
-        content: "i__r";
-        color: transparent;
-        position: absolute;
-        background: url(../img/icon.png);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: contain;
-        right: 60px;
-        top: 31%;
-        font-size: 18px; }
+        right: 60px; }
+    .row-pan h3 .title:before, .row-pan h3 .title:after {
+      content: "i__l";
+      color: transparent;
+      position: absolute;
+      background: url(../img/icon.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      top: 31%;
+      font-size: 18px; }
 
 .recent img {
   width: 100%;
@@ -478,11 +505,11 @@ header .main-menu {
   padding-left: 8px; }
 
 .recent .row-one {
-  margin-bottom: 16px;
-  margin-top: 20px; }
+  margin-bottom: 10px;
+  margin-top: 16px; }
 
 .recent .row-two {
-  margin-bottom: 20px; }
+  margin-bottom: 12px; }
 
 .recent .discount {
   width: 60px;
@@ -518,7 +545,7 @@ header .main-menu {
   .recent .col-3 .btn .box {
     display: inline-block;
     width: 12em;
-    height: 4em;
+    height: 44px;
     position: relative;
     -ms-touch-action: none;
     touch-action: none;
@@ -528,7 +555,7 @@ header .main-menu {
     transition: all 500ms; }
     .recent .col-3 .btn .box .add {
       text-align: center;
-      padding-top: 22px;
+      padding-top: 12px;
       color: #fff;
       position: absolute;
       top: 0px;
@@ -623,8 +650,8 @@ footer {
       margin: 0; }
   footer h1 {
     border-bottom: 1px solid #363636;
-    margin-top: 2em !important;
-    margin-bottom: 2em !important;
+    margin-top: 90px !important;
+    margin-bottom: 30px !important;
     position: relative; }
     footer h1:after {
       border-top: 0px solid transparent;
@@ -650,7 +677,7 @@ footer {
     position: relative; }
     footer .col-fot-mail form input[type="email"] {
       height: 40px;
-      width: 95%;
+      width: 360px;
       background: transparent;
       border: 1px solid #747474;
       padding-left: 15px; }
@@ -660,7 +687,7 @@ footer {
       background: #323031;
       border: 1px solid #323031;
       position: absolute;
-      right: 3%;
+      right: 158px;
       top: 3px;
       color: #fff;
       text-transform: uppercase; }
@@ -675,7 +702,7 @@ footer {
       font-size: 25px;
       width: 50px;
       height: 50px;
-      margin-right: 30px;
+      margin-right: 17px;
       text-align: center;
       float: left;
       line-height: 50px; }
@@ -689,9 +716,30 @@ footer {
       padding: 2px; }
   footer .footer-second {
     color: #747474;
-    padding-bottom: 2em; }
+    padding-bottom: 60px; }
     footer .footer-second .content {
       display: inline-block; }
+      footer .footer-second .content p {
+        font-size: 14px;
+        margin-bottom: 9px;
+        margin-top: 0;
+        color: #363636; }
+      footer .footer-second .content ul {
+        padding: 0; }
+      footer .footer-second .content .cart {
+        width: 18px;
+        height: 18px; }
+      footer .footer-second .content .visa {
+        background: url(../img/card.png) 0 0; }
+      footer .footer-second .content .master {
+        background: url(../img/card.png) -45px 0px; }
+      footer .footer-second .content .debit {
+        background: url(../img/card.png) -80px 0px; }
+      footer .footer-second .content .pro {
+        background: url(../img/card.png) 48px 0px; }
+      footer .footer-second .content a {
+        height: 18px;
+        display: block; }
     footer .footer-second .top {
       display: inline-block;
       float: right;
@@ -699,7 +747,13 @@ footer {
       height: 40px;
       background: #000;
       text-align: center;
-      cursor: pointer; }
+      cursor: pointer;
+      position: relative;
+      top: 15px; }
       footer .footer-second .top .fa-chevron-up {
         color: #fff;
         margin-top: 12px; }
+  footer .black {
+    width: 100%;
+    height: 40px;
+    background: #000; }
