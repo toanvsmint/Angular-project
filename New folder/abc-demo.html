@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <title>Wizy</title>
+</head>
+<body>
+<div class="my-slide container">
+    <div class="img ">
+        <img src="img/vest.jpg" alt=""> 
+    </div>
+    <div class="img ">
+        <img src="img/vest.jpg" alt="">
+    </div>
+    <div class="img ">
+        <img src="img/vest.jpg" alt="">
+    </div>
+    <div class="img ">
+        <img src="img/vest.jpg" alt="">
+    </div>
+    <div class="img ">
+        <img src="img/vest.jpg" alt="">
+    </div>
+</div>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.my-slide').slick({
+        lazyLoad: 'ondemand',
+  slidesToShow: 3,
+     slidesToScroll: 1
+      });
+    });
+  </script>
+</body>
+</html>

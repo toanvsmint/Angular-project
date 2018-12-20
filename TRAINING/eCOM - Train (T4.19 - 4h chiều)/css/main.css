@@ -419,11 +419,14 @@ header .main-menu {
   margin: 0 5px; }
 
 .col-3 {
+  background: #000;
+  -webkit-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms;
   max-width: 24%;
   display: inline-block;
   vertical-align: top;
   width: 100%;
-  padding: 0 3px;
   text-align: center;
   position: relative;
   margin: 0 2px; }
@@ -508,9 +511,6 @@ header .main-menu {
   margin-bottom: 10px;
   margin-top: 16px; }
 
-.recent .row-two {
-  margin-bottom: 12px; }
-
 .recent .discount {
   width: 60px;
   height: 60px;
@@ -534,14 +534,17 @@ header .main-menu {
 .recent .col-3:hover .add {
   background-color: #f0975c !important; }
 
-.recent .col-3:hover .square {
-  background: #4c4c4c6e; }
+.recent .col-3:hover img {
+  opacity: 0.5; }
 
 .recent .col-3 .btn {
   position: absolute;
   z-index: 9;
   bottom: 0;
-  left: 21%; }
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0); }
   .recent .col-3 .btn .box {
     display: inline-block;
     width: 12em;
@@ -568,28 +571,6 @@ header .main-menu {
       transition: all 500ms;
       -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 1% 100%);
       clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 1% 100%); }
-
-.recent .col-3 .square {
-  margin: auto;
-  background: none;
-  position: absolute;
-  top: 0;
-  left: 3px;
-  -webkit-transition: all 500ms;
-  -o-transition: all 500ms;
-  transition: all 500ms; }
-  @media (min-width: 1367px) {
-    .recent .col-3 .square {
-      width: 331px;
-      height: 384px; } }
-  @media (min-width: 1281px) and (max-width: 1366px) {
-    .recent .col-3 .square {
-      width: 320px;
-      height: 370px; } }
-  @media (min-width: 1025px) and (max-width: 1280px) {
-    .recent .col-3 .square {
-      width: 301px;
-      height: 350px; } }
 
 .brand {
   margin-bottom: 6em; }
